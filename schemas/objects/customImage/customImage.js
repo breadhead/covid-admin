@@ -1,26 +1,23 @@
 import { IoIosImage } from 'react-icons/io';
-import { imageSizes } from '../../../helpers/imageSizes';
 import { ImagePreview } from './ImagePreview';
 
-export const imageWithSizes = {
-  name: 'imageWithSizes',
-  title: 'Картинка',
+export const customImage = {
+  name: 'customImage',
+  title: 'Изображение',
   icon: IoIosImage,
   type: 'document',
   fields: [
     {
       name: 'image',
       type: 'image',
-      title: 'Картинка',
+      title: 'Изображение',
     },
     {
-      name: 'size',
-      type: 'string',
-      options: {
-        list: imageSizes,
-      },
-      title: 'Размер',
+      name: 'text',
+      type: 'imageDescription',
+      title: 'Подпись',
     },
+
     {
       name: 'isFullsreen',
       title: 'Фулскрин по клику',
@@ -30,7 +27,6 @@ export const imageWithSizes = {
   preview: {
     select: {
       image: 'image',
-      size: 'size',
     },
     component: ImagePreview,
   },

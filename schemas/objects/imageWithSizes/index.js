@@ -1,1 +1,0 @@
-export { imageWithSizes } from './imageWithSizes';

@@ -31,8 +31,8 @@ export const bodyPortableText = {
       },
     },
     {
-      type: 'imageWithSizes',
-      title: 'Картинка',
+      type: 'customImage',
+      title: 'Изображение',
     },
     {
       type: 'smallText',

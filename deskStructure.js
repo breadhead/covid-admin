@@ -13,7 +13,7 @@ export default () =>
             .title('Партнеры')
             .menuItems(S.documentTypeList('partner').getMenuItems())
             .filter('_type == $type')
-            .params({ type: 'partner' })
+            .params({ type: 'partner' }),
         ),
       S.listItem()
         .id('experts')
@@ -24,7 +24,7 @@ export default () =>
             .title('Эксперты')
             .menuItems(S.documentTypeList('expert').getMenuItems())
             .filter('_type == $type')
-            .params({ type: 'expert' })
+            .params({ type: 'expert' }),
         ),
       S.listItem()
         .id('Articles')
@@ -35,6 +35,6 @@ export default () =>
             .title('Статьи')
             .menuItems(S.documentTypeList('article').getMenuItems())
             .filter('_type == $type')
-            .params({ type: 'article' })
+            .params({ type: 'article' }),
         ),
     ]);

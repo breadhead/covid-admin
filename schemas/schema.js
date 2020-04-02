@@ -2,7 +2,7 @@ import { phone } from './objects/contactItem/phone';
 import { contactItem } from './objects/contactItem/contactItem';
 import { link } from './objects/contactItem/link';
 import { callToAction } from './objects/callToAction';
-import { imageWithSizes } from './objects/imageWithSizes';
+import { customImage } from './objects/customImage';
 import { slide } from './objects/slider/slide';
 import { slider } from './objects/slider/slider';
 import { accordion, accordionItem } from './objects/accordion';
@@ -20,6 +20,7 @@ import partner from './references/partner';
 import expert from './references/expert';
 import article from './references/article';
 import { smallText } from './objects/smallText/smallText';
+import { imageDescription } from './objects/customImage/imageDescription';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -39,7 +40,7 @@ export default createSchema({
     contactItem,
     link,
     callToAction,
-    imageWithSizes,
+    customImage,
     slide,
     slider,
     accordion,
@@ -48,5 +49,6 @@ export default createSchema({
     actionButton,
     bodyPortableText,
     smallText,
+    imageDescription,
   ]),
 });
