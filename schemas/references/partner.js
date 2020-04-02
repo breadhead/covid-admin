@@ -1,3 +1,6 @@
+import { PartnerType } from '../types/PartnerType';
+import { PageType } from '../types/PageType';
+
 const partner = {
   name: 'partner',
   title: 'Партнер',
@@ -14,6 +17,15 @@ const partner = {
       title: 'Индекс сортировки',
       type: 'number',
       validation: Rule => [Rule.required(), Rule.positive()],
+    },
+    {
+      name: 'type',
+      title: 'Тип',
+      type: 'string',
+      options: {
+        list: [PartnerType.Info, PartnerType.Infrastructure],
+      },
+      validation: Rule => Rule.required(),
     },
     {
       name: 'name',
@@ -41,10 +53,24 @@ const partner = {
       type: 'image',
       validation: Rule => Rule.required(),
     },
+    {
+      name: 'pageToShow',
+      title: 'Страница отображения',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          options: {
+            list: [PageType.Main, PageType.Partners],
+          },
+        },
+      ],
+    },
   ],
   initialValue: {
     sortIndex: 500,
     status: true,
+    pageType: [PageType.Main, PageType.Partners],
   },
   preview: {
     select: {
