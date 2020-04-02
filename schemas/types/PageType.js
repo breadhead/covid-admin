@@ -1,4 +1,4 @@
 export const PageType = {
-    Main: 'main',
-    Partners: 'partners'
+  Main: 'main',
+  Partners: 'partners',
 };

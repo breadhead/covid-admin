@@ -1,4 +1,4 @@
 export const PartnerType = {
-    Info: 'info',
-    Infrastructure: 'infrastructure'
+  Info: 'info',
+  Infrastructure: 'infrastructure',
 };

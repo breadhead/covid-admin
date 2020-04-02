@@ -1,5 +1,5 @@
-import {PartnerType} from "../types/PartnerType";
-import {PageType} from "../types/PageType";
+import { PartnerType } from '../types/PartnerType';
+import { PageType } from '../types/PageType';
 
 const partner = {
   name: 'partner',
@@ -21,9 +21,9 @@ const partner = {
     {
       name: 'type',
       title: 'Тип',
-      type: "string",
+      type: 'string',
       options: {
-        list: [PartnerType.Info, PartnerType.Infrastructure]
+        list: [PartnerType.Info, PartnerType.Infrastructure],
       },
       validation: Rule => Rule.required(),
     },
@@ -57,18 +57,20 @@ const partner = {
       name: 'pageToShow',
       title: 'Страница отображения',
       type: 'array',
-      of: [{
-        type: 'string',
-        options: {
-          list: [PageType.Main, PageType.Partners]
-        }
-      }],
+      of: [
+        {
+          type: 'string',
+          options: {
+            list: [PageType.Main, PageType.Partners],
+          },
+        },
+      ],
     },
   ],
   initialValue: {
     sortIndex: 500,
     status: true,
-    pageType: [PageType.Main, PageType.Partners]
+    pageType: [PageType.Main, PageType.Partners],
   },
   preview: {
     select: {
