@@ -23,6 +23,7 @@ import { smallText } from './objects/smallText/smallText';
 import { smallBlockText } from './objects/portable-text/smallBlockText';
 import { youtube } from './objects/video/youtube';
 import { actionBlock } from './objects/actionBlock/actionBlock';
+import { category } from './references/category';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -54,5 +55,7 @@ export default createSchema({
     smallBlockText,
     youtube,
     actionBlock,
+
+    category,
   ]),
 });

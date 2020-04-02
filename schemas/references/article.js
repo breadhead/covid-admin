@@ -10,6 +10,12 @@ const article = {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'categories',
+      title: 'Категории',
+      type: 'reference',
+      to: [{ type: 'category' }],
+    },
+    {
       name: 'sortIndex',
       title: 'Индекс сортировки',
       type: 'number',

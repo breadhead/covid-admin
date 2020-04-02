@@ -11,10 +11,7 @@ export const smallBlockText = {
       styles: [{ title: 'Текст', value: 'normal' }],
       lists: [],
       marks: {
-        decorators: [
-          { title: 'Strong', value: 'strong' },
-          { title: 'Itallic', value: 'em' },
-        ],
+        decorators: [{ title: 'Strong', value: 'strong' }],
         annotations: [
           {
             name: 'link',

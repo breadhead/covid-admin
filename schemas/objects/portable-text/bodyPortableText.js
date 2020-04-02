@@ -24,10 +24,7 @@ export const bodyPortableText = {
         { title: 'Number', value: 'number' },
       ],
       marks: {
-        decorators: [
-          { title: 'Strong', value: 'strong' },
-          { title: 'Itallic', value: 'em' },
-        ],
+        decorators: [{ title: 'Strong', value: 'strong' }],
         annotations: annotations,
       },
     },
