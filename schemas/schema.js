@@ -20,7 +20,8 @@ import partner from './references/partner';
 import expert from './references/expert';
 import article from './references/article';
 import { smallText } from './objects/smallText/smallText';
-import { imageDescription } from './objects/customImage/imageDescription';
+import { smallBlockText } from './objects/portable-text/smallBlockText';
+import { youtube } from './objects/video/youtube';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -49,6 +50,7 @@ export default createSchema({
     actionButton,
     bodyPortableText,
     smallText,
-    imageDescription,
+    smallBlockText,
+    youtube,
   ]),
 });

@@ -14,7 +14,7 @@ export const customImage = {
     },
     {
       name: 'text',
-      type: 'imageDescription',
+      type: 'smallBlockText',
       title: 'Подпись',
     },
 
