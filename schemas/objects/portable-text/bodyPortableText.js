@@ -1,6 +1,6 @@
 import { IoIosRadioButtonOn } from 'react-icons/io';
 import { annotations } from './annotations';
-import { FaVideo } from 'react-icons/fa';
+import { FaVideo, FaFireAlt } from 'react-icons/fa';
 
 export const portableTextElements = [
   { title: 'Текст', value: 'normal' },
@@ -43,6 +43,11 @@ export const bodyPortableText = {
       type: 'actionButton',
       icon: IoIosRadioButtonOn,
       title: 'Кнопка',
+    },
+    {
+      type: 'actionBlock',
+      icon: FaFireAlt,
+      title: 'Выделенный блок',
     },
     {
       type: 'youtube',
