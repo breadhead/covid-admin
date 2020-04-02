@@ -33,7 +33,7 @@ const expert = {
       type: 'slug',
       description: 'После заполнения поля "Имя" нажмите "Generate"',
       options: {
-        source: doc => doc.name ?? '',
+        source: doc => doc.name || '',
         maxLength: 250,
       },
       validation: Rule => Rule.required(),
