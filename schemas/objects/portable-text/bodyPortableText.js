@@ -7,7 +7,6 @@ export const portableTextElements = [
   { title: 'Заголовок H3', value: 'h3' },
   { title: 'Заголовок H4', value: 'h4' },
   { title: 'Крупный текст', value: 'blockquote' },
-  { title: 'Мелкий текст', value: 'span' },
 ];
 
 export const bodyPortableText = {
@@ -34,6 +33,10 @@ export const bodyPortableText = {
     {
       type: 'imageWithSizes',
       title: 'Картинка',
+    },
+    {
+      type: 'smallText',
+      title: 'мелкий текст',
     },
     {
       type: 'actionButton',

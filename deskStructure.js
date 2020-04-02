@@ -6,7 +6,6 @@ export default () =>
     .items([
       S.listItem()
         .id('partners')
-        //.icon()
         .title('Партнеры')
         .child(
           S.documentList()
@@ -14,11 +13,10 @@ export default () =>
             .title('Партнеры')
             .menuItems(S.documentTypeList('partner').getMenuItems())
             .filter('_type == $type')
-            .params({ type: 'partner' }),
+            .params({ type: 'partner' })
         ),
       S.listItem()
         .id('experts')
-        //.icon()
         .title('Эксперты')
         .child(
           S.documentList()
@@ -26,6 +24,17 @@ export default () =>
             .title('Эксперты')
             .menuItems(S.documentTypeList('expert').getMenuItems())
             .filter('_type == $type')
-            .params({ type: 'expert' }),
+            .params({ type: 'expert' })
+        ),
+      S.listItem()
+        .id('Articles')
+        .title('Статьи')
+        .child(
+          S.documentList()
+            .id('allArticles')
+            .title('Статьи')
+            .menuItems(S.documentTypeList('article').getMenuItems())
+            .filter('_type == $type')
+            .params({ type: 'article' })
         ),
     ]);

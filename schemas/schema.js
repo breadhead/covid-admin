@@ -18,6 +18,8 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 import partner from './references/partner';
 import expert from './references/expert';
+import article from './references/article';
+import { smallText } from './objects/smallText/smallText';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,6 +32,7 @@ export default createSchema({
 
     partner,
     expert,
+    article,
     // objects
 
     phone,
@@ -44,5 +47,6 @@ export default createSchema({
     accordionItem,
     actionButton,
     bodyPortableText,
+    smallText,
   ]),
 });
