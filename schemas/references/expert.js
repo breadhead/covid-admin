@@ -1,6 +1,9 @@
+import { MdPeopleOutline } from 'react-icons/md';
+
 const expert = {
   name: 'expert',
-  title: 'Партнер',
+  title: 'Эксперт',
+  icon: MdPeopleOutline,
   type: 'document',
   fields: [
     {

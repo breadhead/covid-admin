@@ -1,21 +1,7 @@
-import { phone } from './objects/contactItem/phone';
-import { contactItem } from './objects/contactItem/contactItem';
-import { link } from './objects/contactItem/link';
 import { callToAction } from './objects/callToAction';
 import { customImage } from './objects/customImage';
-import { slide } from './objects/slider/slide';
-import { slider } from './objects/slider/slider';
-import { accordion, accordionItem } from './objects/accordion';
-import { email } from './objects/contactItem/email';
 import { bodyPortableText } from './objects/portable-text/bodyPortableText';
 import { actionButton } from './objects/actionButton/actionButton';
-
-// First, we must import the schema creator
-
-import createSchema from 'part:@sanity/base/schema-creator';
-
-// Then import schema types from any plugins that might expose them
-import schemaTypes from 'all:part:@sanity/base/schema-type';
 import partner from './references/partner';
 import expert from './references/expert';
 import article from './references/article';
@@ -24,6 +10,10 @@ import { smallBlockText } from './objects/portable-text/smallBlockText';
 import { youtube } from './objects/video/youtube';
 import { actionBlock } from './objects/actionBlock/actionBlock';
 import { category } from './references/category';
+
+import createSchema from 'part:@sanity/base/schema-creator';
+
+import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -39,16 +29,9 @@ export default createSchema({
     article,
     // objects
 
-    phone,
-    contactItem,
-    link,
     callToAction,
     customImage,
-    slide,
-    slider,
-    accordion,
-    email,
-    accordionItem,
+
     actionButton,
     bodyPortableText,
     smallText,

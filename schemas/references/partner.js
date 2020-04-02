@@ -1,9 +1,11 @@
 import { PartnerType } from '../types/PartnerType';
 import { PageType } from '../types/PageType';
+import { MdPeople } from 'react-icons/md';
 
 const partner = {
   name: 'partner',
   title: 'Партнер',
+  icon: MdPeople,
   type: 'document',
   fields: [
     {

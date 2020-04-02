@@ -4,7 +4,7 @@ import { linkOptions } from '../../../helpers/linkOptions';
 
 export const actionButton = {
   name: 'actionButton',
-  title: 'Call-to-Action button',
+  title: 'Кнопка',
   icon: IoIosRadioButtonOn,
   type: 'document',
   fields: [

@@ -1,6 +1,9 @@
+import { FiFileText } from 'react-icons/fi';
+
 const article = {
   name: 'article',
   title: 'Статья',
+  icon: FiFileText,
   type: 'document',
   fields: [
     {

@@ -3,7 +3,7 @@ import { MdArtTrack } from 'react-icons/md';
 
 export const smallText = {
   name: 'smallText',
-  type: 'document',
+  type: 'object',
   icon: MdArtTrack,
   title: 'Мелкий текст',
   fields: [
@@ -14,9 +14,6 @@ export const smallText = {
     },
   ],
 
-  initialValue: {
-    blank: true,
-  },
   preview: {
     select: {
       text: 'text',

@@ -2,7 +2,7 @@ import { FaFireAlt } from 'react-icons/fa';
 
 export const actionBlock = {
   name: 'actionBlock',
-  title: 'Action block',
+  title: 'Выделенный блок',
   icon: FaFireAlt,
   type: 'document',
   fields: [
