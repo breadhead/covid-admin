@@ -74,6 +74,7 @@ export const partner = {
               { value: PageType.Main, title: 'На главной' },
               { value: PageType.Info, title: 'В разделе Справочнаяя' },
               { value: PageType.Hospital, title: 'В разделе Помощь больницам' },
+              { value: PageType.Doctor, title: 'В разделе Врачам' },
             ],
           },
         },
