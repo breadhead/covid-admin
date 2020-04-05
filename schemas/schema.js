@@ -44,6 +44,6 @@ export default createSchema({
     smallBlockText,
     youtube,
     actionBlock,
-    registerButton
+    registerButton,
   ]),
 });
