@@ -1,6 +1,6 @@
 const expert = {
   name: 'expert',
-  title: 'Партнер',
+  title: 'Экперт',
   type: 'document',
   fields: [
     {

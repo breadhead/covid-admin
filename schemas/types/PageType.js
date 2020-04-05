@@ -1,4 +1,5 @@
 export const PageType = {
   Main: 'main',
-  Partners: 'partners',
+  Info: 'info',
+  Hospital: 'hospital'
 };

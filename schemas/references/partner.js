@@ -23,7 +23,7 @@ const partner = {
       title: 'Тип',
       type: 'string',
       options: {
-        list: [PartnerType.Info, PartnerType.Infrastructure],
+        list: [PartnerType.Info, PartnerType.Infrastructure, PartnerType.Donor],
       },
       validation: Rule => Rule.required(),
     },
@@ -61,7 +61,7 @@ const partner = {
         {
           type: 'string',
           options: {
-            list: [PageType.Main, PageType.Partners],
+            list: [PageType.Main, PageType.Info, PageType.Hospital],
           },
         },
       ],
@@ -70,7 +70,7 @@ const partner = {
   initialValue: {
     sortIndex: 500,
     status: true,
-    pageType: [PageType.Main, PageType.Partners],
+    pageType: [PageType.Main],
   },
   preview: {
     select: {
