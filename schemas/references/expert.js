@@ -1,6 +1,9 @@
+import { MdPeopleOutline } from 'react-icons/md';
+
 const expert = {
   name: 'expert',
-  title: 'Экперт',
+  title: 'Эксперт',
+  icon: MdPeopleOutline,
   type: 'document',
   fields: [
     {
@@ -33,7 +36,7 @@ const expert = {
       type: 'slug',
       description: 'После заполнения поля "Имя" нажмите "Generate"',
       options: {
-        source: doc => doc.name ?? '',
+        source: doc => doc.name || '',
         maxLength: 250,
       },
       validation: Rule => Rule.required(),

@@ -1,11 +1,9 @@
-import { PartnerType } from '../types/PartnerType';
-import { PageType } from '../types/PageType';
-import { MdPeople } from 'react-icons/md';
+import { FiFileText } from 'react-icons/fi';
 
-const partner = {
-  name: 'partner',
-  title: 'Партнер',
-  icon: MdPeople,
+const article = {
+  name: 'article',
+  title: 'Статья',
+  icon: FiFileText,
   type: 'document',
   fields: [
     {
@@ -15,23 +13,20 @@ const partner = {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'categories',
+      title: 'Категории',
+      type: 'reference',
+      to: [{ type: 'category' }],
+    },
+    {
       name: 'sortIndex',
       title: 'Индекс сортировки',
       type: 'number',
       validation: Rule => [Rule.required(), Rule.positive()],
     },
     {
-      name: 'type',
-      title: 'Тип',
-      type: 'string',
-      options: {
-        list: [PartnerType.Info, PartnerType.Infrastructure, PartnerType.Donor],
-      },
-      validation: Rule => Rule.required(),
-    },
-    {
       name: 'name',
-      title: 'Название',
+      title: 'Имя',
       validation: Rule => Rule.required(),
       type: 'string',
     },
@@ -42,49 +37,35 @@ const partner = {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'url',
-      title: 'Url сайта',
-      type: 'url',
+      name: 'code',
+      title: 'url-код',
+      type: 'slug',
+      description: 'После заполнения поля "Имя" нажмите "Generate"',
       options: {
-        allowRelative: false,
+        source: doc => doc.name || '',
+        maxLength: 250,
       },
-    },
-    {
-      name: 'logo',
-      title: 'Логотип',
-      type: 'image',
       validation: Rule => Rule.required(),
     },
     {
-      name: 'pageToShow',
-      title: 'Страница отображения',
-      type: 'array',
-      of: [
-        {
-          type: 'string',
-          options: {
-            list: [PageType.Main, PageType.Info, PageType.Hospital],
-          },
-        },
-      ],
+      name: 'description',
+      title: 'Описание',
+      type: 'bodyPortableText',
     },
   ],
   initialValue: {
     sortIndex: 500,
     status: true,
-    pageType: [PageType.Main],
   },
   preview: {
     select: {
       title: 'name',
       id: '_id',
       status: 'status',
-      logo: 'logo',
     },
     prepare(selection) {
-      const { title, id, status, logo } = selection;
+      const { title, id, status } = selection;
       return {
-        media: logo,
         title: title,
         subtitle: `${status === true ? 'Active' : 'Disabled'} - ${id}`,
       };
@@ -104,4 +85,4 @@ const partner = {
   ],
 };
 
-export default partner;
+export default article;
