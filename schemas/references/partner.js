@@ -25,7 +25,10 @@ const partner = {
       title: 'Тип',
       type: 'string',
       options: {
-        list: [PartnerType.Info, PartnerType.Infrastructure, PartnerType.Donor],
+        list: [
+          {value: PartnerType.Info, title: 'Инфопартнер'},
+          {value: PartnerType.Infrastructure, title: 'Инфраструктурный партнер'},
+          {value: PartnerType.Donor, title: 'Донор'}],
       },
       validation: Rule => Rule.required(),
     },
@@ -63,7 +66,10 @@ const partner = {
         {
           type: 'string',
           options: {
-            list: [PageType.Main, PageType.Info, PageType.Hospital],
+            list: [
+              {value: PageType.Main, title: 'На главной'},
+              {value: PageType.Info, title: 'В разделе Справочнаяя'},
+              {value: PageType.Hospital, title: 'В разделе Помощь больницам'}],
           },
         },
       ],

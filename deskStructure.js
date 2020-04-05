@@ -13,4 +13,5 @@ export default () =>
       getListItem({ type: 'expert', name: 'Эксперты', icon: MdPeopleOutline }),
       getListItem({ type: 'article', name: 'Статьи', icon: FiFileText }),
       getListItem({ type: 'category', name: 'Категории', icon: AiFillTags }),
+      getListItem({ type: 'expertBoard', name: 'Экспертный совет', icon: MdPeopleOutline }),
     ]);
