@@ -7,6 +7,8 @@ import { partner } from './references/partner';
 import expert from './references/expert';
 import article from './references/article';
 import news from './references/news';
+import { resource } from './references/resource';
+import { hospital } from './references/hospital';
 import { smallText } from './objects/smallText/smallText';
 import { smallBlockText } from './objects/portable-text/smallBlockText';
 import { youtube } from './objects/video/youtube';
@@ -33,6 +35,8 @@ export default createSchema({
     tag,
     expertBoard,
     news,
+    hospital,
+    resource,
     // objects
 
     callToAction,
