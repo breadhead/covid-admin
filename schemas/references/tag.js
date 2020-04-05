@@ -19,8 +19,7 @@ export const tag = {
       type: 'slug',
       description: 'После заполнения поля "Название" нажмите "Generate"',
       options: {
-        source: doc =>
-          doc.name ? doc.name : '',
+        source: doc => (doc.name ? doc.name : ''),
         maxLength: 250,
       },
       validation: Rule =>

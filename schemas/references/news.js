@@ -8,32 +8,32 @@ news.name = 'news';
 news.title = 'Новости';
 news.fields = news.fields.map(field => {
   if (field.name === 'categories') {
-      return {
-          name: 'categories',
-              title: 'Категории',
-              type: 'array',
-              of: [
-              {
-                  type: 'string',
-                  options: {
-                      list: [
-                          { value: NewsCategory.News, title: 'Новости' },
-                          { value: NewsCategory.Help, title: 'Помощь больницам' },
-                          { value: NewsCategory.Report, title: 'Отчеты' },
-                      ],
-                  },
-              },
-          ],
-      }
+    return {
+      name: 'categories',
+      title: 'Категории',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          options: {
+            list: [
+              { value: NewsCategory.News, title: 'Новости' },
+              { value: NewsCategory.Help, title: 'Помощь больницам' },
+              { value: NewsCategory.Report, title: 'Отчеты' },
+            ],
+          },
+        },
+      ],
+    };
   }
 
   return field;
 });
 
 news.fields.unshift({
-    title: 'Показывать на главной',
-    name: 'showOnMain',
-    type: 'boolean',
+  title: 'Показывать на главной',
+  name: 'showOnMain',
+  type: 'boolean',
 });
 
 const initials = Object.assign({}, news.initialValue);

@@ -79,7 +79,7 @@ const article = {
           weak: true,
         },
       ],
-    }
+    },
   ],
   initialValue: {
     sortIndex: 500,
