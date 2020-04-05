@@ -113,5 +113,5 @@ const article = {
     },
   ],
 };
-console.log(article);
+
 export default article;

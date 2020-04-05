@@ -35,7 +35,7 @@ export const actionBlock = {
       const { text } = selection;
 
       return {
-        title: text.ru,
+        title: text,
       };
     },
   },

@@ -37,6 +37,7 @@ news.fields.unshift({
 });
 
 const initials = Object.assign({}, news.initialValue);
+
 initials.categories = [NewsCategory.News];
 initials.showOnMain = true;
 
