@@ -2,7 +2,7 @@ import { PartnerType } from '../types/PartnerType';
 import { PageType } from '../types/PageType';
 import { MdPeople } from 'react-icons/md';
 
-const partner = {
+export const partner = {
   name: 'partner',
   title: 'Партнер',
   icon: MdPeople,
@@ -114,5 +114,3 @@ const partner = {
     },
   ],
 };
-
-export default partner;

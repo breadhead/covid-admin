@@ -1,4 +1,6 @@
 import { FiFileText } from 'react-icons/fi';
+import {PageType} from "../types/PageType";
+import {ArticleCategory} from "../types/ArticleCategory";
 
 const article = {
   name: 'article',
@@ -15,32 +17,31 @@ const article = {
     {
       name: 'categories',
       title: 'Категории',
-      type: 'reference',
-      to: [{ type: 'category' }],
-    },
-    {
-      name: 'sortIndex',
-      title: 'Индекс сортировки',
-      type: 'number',
-      validation: Rule => [Rule.required(), Rule.positive()],
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          options: {
+            list: [
+              { value: ArticleCategory.ClinicalRecommends, title: 'Клинические рекомендации'},
+              { value: ArticleCategory.Article, title: 'Статьи'  },
+              { value: ArticleCategory.Webinar, title: 'Вебинары' },
+            ],
+          },
+        },
+      ],
     },
     {
       name: 'name',
-      title: 'Имя',
+      title: 'Заголовок',
       validation: Rule => Rule.required(),
       type: 'string',
-    },
-    {
-      name: 'subtitle',
-      title: 'Подзаголовок',
-      type: 'string',
-      validation: Rule => Rule.required(),
     },
     {
       name: 'code',
       title: 'url-код',
       type: 'slug',
-      description: 'После заполнения поля "Имя" нажмите "Generate"',
+      description: 'После заполнения поля "Заголовок" нажмите "Generate"',
       options: {
         source: doc => doc.name || '',
         maxLength: 250,
@@ -48,14 +49,21 @@ const article = {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'description',
-      title: 'Описание',
+      name: 'content',
+      title: 'Контент',
       type: 'bodyPortableText',
+    },
+    {
+      name: 'sortIndex',
+      title: 'Индекс сортировки',
+      type: 'number',
+      validation: Rule => [Rule.required(), Rule.positive()],
     },
   ],
   initialValue: {
     sortIndex: 500,
     status: true,
+    categories: [ArticleCategory.Article]
   },
   preview: {
     select: {

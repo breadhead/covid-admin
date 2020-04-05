@@ -2,14 +2,15 @@ import { callToAction } from './objects/callToAction';
 import { customImage } from './objects/customImage';
 import { bodyPortableText } from './objects/portable-text/bodyPortableText';
 import { actionButton } from './objects/actionButton/actionButton';
-import partner from './references/partner';
+import { partner } from './references/partner';
 import expert from './references/expert';
 import article from './references/article';
+import news from './references/news';
 import { smallText } from './objects/smallText/smallText';
 import { smallBlockText } from './objects/portable-text/smallBlockText';
 import { youtube } from './objects/video/youtube';
 import { actionBlock } from './objects/actionBlock/actionBlock';
-import { category } from './references/category';
+import { tag } from './references/tag';
 
 import createSchema from 'part:@sanity/base/schema-creator';
 
@@ -28,7 +29,9 @@ export default createSchema({
     partner,
     expert,
     article,
+    tag,
     expertBoard,
+    news,
     // objects
 
     callToAction,
@@ -40,7 +43,5 @@ export default createSchema({
     smallBlockText,
     youtube,
     actionBlock,
-
-    category,
   ]),
 });
