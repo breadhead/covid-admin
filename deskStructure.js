@@ -10,7 +10,11 @@ export default () =>
     .id('main')
     .items([
       getListItem({ type: 'partner', name: 'Партнеры', icon: MdPeople }),
-      getListItem({ type: 'expert', name: 'Эксперты справочной', icon: MdPeopleOutline }),
+      getListItem({
+        type: 'expert',
+        name: 'Эксперты справочной',
+        icon: MdPeopleOutline,
+      }),
       getListItem({ type: 'news', name: 'Новости', icon: FiFileText }),
       getListItem({ type: 'article', name: 'Статьи', icon: FiFileText }),
       getListItem({ type: 'tag', name: 'Теги', icon: AiFillTags }),

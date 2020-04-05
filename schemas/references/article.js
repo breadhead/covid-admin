@@ -1,6 +1,6 @@
 import { FiFileText } from 'react-icons/fi';
-import {PageType} from "../types/PageType";
-import {ArticleCategory} from "../types/ArticleCategory";
+import { PageType } from '../types/PageType';
+import { ArticleCategory } from '../types/ArticleCategory';
 
 const article = {
   name: 'article',
@@ -23,8 +23,11 @@ const article = {
           type: 'string',
           options: {
             list: [
-              { value: ArticleCategory.ClinicalRecommends, title: 'Клинические рекомендации'},
-              { value: ArticleCategory.Article, title: 'Статьи'  },
+              {
+                value: ArticleCategory.ClinicalRecommends,
+                title: 'Клинические рекомендации',
+              },
+              { value: ArticleCategory.Article, title: 'Статьи' },
               { value: ArticleCategory.Webinar, title: 'Вебинары' },
             ],
           },
@@ -54,16 +57,34 @@ const article = {
       type: 'bodyPortableText',
     },
     {
+      name: 'image',
+      title: 'Фото',
+      type: 'image',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'sortIndex',
       title: 'Индекс сортировки',
       type: 'number',
       validation: Rule => [Rule.required(), Rule.positive()],
     },
+    {
+      name: 'tags',
+      title: 'Теги',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'tag' }],
+          weak: true,
+        },
+      ],
+    }
   ],
   initialValue: {
     sortIndex: 500,
     status: true,
-    categories: [ArticleCategory.Article]
+    categories: [ArticleCategory.Article],
   },
   preview: {
     select: {
@@ -92,5 +113,5 @@ const article = {
     },
   ],
 };
-
+console.log(article);
 export default article;
