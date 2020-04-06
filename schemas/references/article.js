@@ -60,7 +60,6 @@ const article = {
       name: 'image',
       title: 'Фото',
       type: 'image',
-      validation: Rule => Rule.required(),
     },
     {
       name: 'sortIndex',
