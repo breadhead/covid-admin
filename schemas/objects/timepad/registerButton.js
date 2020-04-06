@@ -16,9 +16,9 @@ export const registerButton = {
       name: 'title',
       title: 'Подпись кнопки',
       type: 'string',
-      validation: (Rule) => Rule.required(),
     },
   ],
+
   preview: {
     select: {
       text: 'text',
