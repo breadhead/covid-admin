@@ -5,6 +5,7 @@ import { IoIosRadioButtonOff } from 'react-icons/all';
 
 export const portableTextElements = [
   { title: 'Текст', value: 'normal' },
+  { title: 'Заголовок H1', value: 'h1' },
   { title: 'Заголовок H2', value: 'h2' },
   { title: 'Заголовок H3', value: 'h3' },
   { title: 'Заголовок H4', value: 'h4' },
