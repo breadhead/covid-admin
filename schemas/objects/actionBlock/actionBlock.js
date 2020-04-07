@@ -7,11 +7,6 @@ export const actionBlock = {
   type: 'document',
   fields: [
     {
-      name: 'image',
-      title: 'Изображение',
-      type: 'image',
-    },
-    {
       name: 'title',
       title: 'Заголовок',
       type: 'string',
