@@ -1,4 +1,3 @@
-import { actionButtonType } from '../../../helpers/actionButtonType';
 import { IoIosRadioButtonOn } from 'react-icons/io';
 import { linkOptions } from '../../../helpers/linkOptions';
 
@@ -8,14 +7,6 @@ export const actionButton = {
   icon: IoIosRadioButtonOn,
   type: 'document',
   fields: [
-    {
-      name: 'type',
-      title: 'Тип',
-      type: 'string',
-      options: {
-        list: actionButtonType,
-      },
-    },
     {
       name: 'text',
       title: 'Текст',

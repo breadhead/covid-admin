@@ -24,14 +24,7 @@ export const actionBlock = {
   ],
   preview: {
     select: {
-      text: 'text',
-    },
-    prepare(selection) {
-      const { text } = selection;
-
-      return {
-        title: text,
-      };
+      title: 'title',
     },
   },
 };
