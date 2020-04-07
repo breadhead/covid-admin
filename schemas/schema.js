@@ -14,6 +14,7 @@ import { smallBlockText } from './objects/portable-text/smallBlockText';
 import { youtube } from './objects/video/youtube';
 import { actionBlock } from './objects/actionBlock/actionBlock';
 import { tag } from './references/tag';
+import { form } from './objects/form/form'
 
 import createSchema from 'part:@sanity/base/schema-creator';
 
@@ -49,5 +50,6 @@ export default createSchema({
     youtube,
     actionBlock,
     registerButton,
+    form,
   ]),
 });

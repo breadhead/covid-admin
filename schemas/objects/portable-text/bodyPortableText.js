@@ -1,4 +1,4 @@
-import { IoIosRadioButtonOn } from 'react-icons/io';
+import { IoIosRadioButtonOn, IoMdPaper } from 'react-icons/io';
 import { annotations } from './annotations';
 import { FaVideo, FaFireAlt } from 'react-icons/fa';
 import { IoIosRadioButtonOff } from 'react-icons/all';
@@ -58,5 +58,10 @@ export const bodyPortableText = {
       icon: IoIosRadioButtonOff,
       title: 'Кнопка регистрации на вебинар',
     },
+    {
+      type: 'form',
+      icon: IoMdPaper,
+      title: 'Форма',
+    }
   ],
 };
