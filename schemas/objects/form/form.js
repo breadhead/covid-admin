@@ -23,7 +23,7 @@ export const form = {
           },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: Rule => Rule.required(),
     },
     {
       name: 'fieldOptions',
@@ -37,7 +37,7 @@ export const form = {
               type: 'string',
               name: 'name',
               title: 'Имя поля',
-              validation: (Rule) => Rule.required(),
+              validation: Rule => Rule.required(),
             },
             {
               type: 'string',
@@ -52,7 +52,6 @@ export const form = {
           ],
         },
       ],
-
     },
   ],
 
@@ -61,7 +60,6 @@ export const form = {
       title: 'formType',
     },
     prepare(selection) {
-
       const { title } = selection;
 
       return {

@@ -3,7 +3,8 @@ export const FormType = {
   HospitalAid: 'hospitalAid',
 };
 
-export const formTypeToString = (type) => ({
-  [FormType.WebinarSignUp]: 'Запись на вебинар',
-  [FormType.HospitalAid]: 'Помощь больницам',
-})[type];
+export const formTypeToString = type =>
+  ({
+    [FormType.WebinarSignUp]: 'Запись на вебинар',
+    [FormType.HospitalAid]: 'Помощь больницам',
+  }[type]);

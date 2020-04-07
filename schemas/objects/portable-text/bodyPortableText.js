@@ -62,6 +62,6 @@ export const bodyPortableText = {
       type: 'form',
       icon: IoMdPaper,
       title: 'Форма',
-    }
+    },
   ],
 };
