@@ -10,7 +10,7 @@ export const registerButton = {
       name: 'webinarId',
       title: 'ID вебинара (из timepad)',
       type: 'string',
-      validation: (Rule) => Rule.required(),
+      validation: Rule => Rule.required(),
     },
     {
       name: 'title',

@@ -24,6 +24,9 @@ export const customImage = {
       type: 'boolean',
     },
   ],
+  initialValue: {
+    isFullsreen: true,
+  },
   preview: {
     select: {
       image: 'image',
