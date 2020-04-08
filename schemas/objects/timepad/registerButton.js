@@ -10,24 +10,29 @@ export const registerButton = {
       name: 'webinarId',
       title: 'ID вебинара (из timepad)',
       type: 'string',
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'title',
       title: 'Подпись кнопки',
       type: 'string',
     },
+    {
+      name: 'text',
+      title: 'Текст',
+      type: 'smallBlockText',
+    },
   ],
 
   preview: {
     select: {
-      text: 'text',
+      title: 'title',
     },
     prepare(selection) {
-      const { text } = selection;
+      const { title } = selection;
 
       return {
-        title: text,
+        title: title,
       };
     },
   },
