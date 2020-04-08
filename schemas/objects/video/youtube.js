@@ -20,7 +20,7 @@ export const youtube = {
   ],
   preview: {
     select: {
-      url: 'url',
+      title: 'url',
     },
     component: YoutubePreview,
   },

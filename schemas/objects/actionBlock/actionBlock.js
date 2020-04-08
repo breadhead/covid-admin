@@ -7,11 +7,6 @@ export const actionBlock = {
   type: 'document',
   fields: [
     {
-      name: 'image',
-      title: 'Изображение',
-      type: 'image',
-    },
-    {
       name: 'title',
       title: 'Заголовок',
       type: 'string',
@@ -29,14 +24,7 @@ export const actionBlock = {
   ],
   preview: {
     select: {
-      text: 'text',
-    },
-    prepare(selection) {
-      const { text } = selection;
-
-      return {
-        title: text,
-      };
+      title: 'title',
     },
   },
 };

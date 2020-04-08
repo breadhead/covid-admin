@@ -17,17 +17,22 @@ export const registerButton = {
       title: 'Подпись кнопки',
       type: 'string',
     },
+    {
+      name: 'text',
+      title: 'Текст',
+      type: 'smallBlockText',
+    },
   ],
 
   preview: {
     select: {
-      text: 'text',
+      title: 'title',
     },
     prepare(selection) {
-      const { text } = selection;
+      const { title } = selection;
 
       return {
-        title: text,
+        title: title,
       };
     },
   },
