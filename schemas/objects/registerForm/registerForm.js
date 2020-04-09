@@ -1,7 +1,7 @@
 import { IoMdPaper } from 'react-icons/all';
 
 export const registerForm = {
-  name: 'form',
+  name: 'registerForm',
   title: 'Форма',
   icon: IoMdPaper,
   type: 'document',
@@ -10,7 +10,7 @@ export const registerForm = {
       name: 'webinarName',
       title: 'Название мероприятия',
       type: 'string',
-      validation: Rule.required(),
+      validation: Rule => Rule.required(),
     },
     {
       name: 'startDate',
@@ -32,7 +32,7 @@ export const registerForm = {
       const { title } = selection;
 
       return {
-        title: `Форма регистрации на : ${formTypeToString(title)}`,
+        title: `Форма регистрации на: ${title}`,
       };
     },
   },
