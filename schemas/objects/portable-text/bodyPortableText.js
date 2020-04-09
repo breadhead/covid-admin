@@ -54,9 +54,9 @@ export const bodyPortableText = {
       title: 'Кнопка регистрации на вебинар',
     },
     {
-      type: 'form',
+      type: 'registerForm',
       icon: IoMdPaper,
-      title: 'Форма',
+      title: 'Форма регистрации на вебинар',
     },
   ],
 };

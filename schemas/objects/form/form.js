@@ -14,10 +14,6 @@ export const form = {
       options: {
         list: [
           {
-            value: FormType.WebinarSignUp,
-            title: formTypeToString(FormType.WebinarSignUp),
-          },
-          {
             value: FormType.HospitalAid,
             title: formTypeToString(FormType.HospitalAid),
           },

@@ -15,6 +15,7 @@ import { youtube } from './objects/video/youtube';
 import { actionBlock } from './objects/actionBlock/actionBlock';
 import { tag } from './references/tag';
 import { form } from './objects/form/form';
+import { registerForm } from './objects/registerForm/registerForm';
 
 import createSchema from 'part:@sanity/base/schema-creator';
 
@@ -51,5 +52,6 @@ export default createSchema({
     actionBlock,
     registerButton,
     form,
+    registerForm,
   ]),
 });
