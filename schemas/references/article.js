@@ -1,5 +1,4 @@
 import { FiFileText } from 'react-icons/fi';
-import { PageType } from '../types/PageType';
 import { ArticleCategory } from '../types/ArticleCategory';
 
 const article = {
@@ -13,6 +12,11 @@ const article = {
       title: 'Активный',
       type: 'boolean',
       validation: Rule => Rule.required(),
+    },
+    {
+      name: 'pin',
+      title: 'Запинить',
+      type: 'boolean',
     },
     {
       name: 'categories',
