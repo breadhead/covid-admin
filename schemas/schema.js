@@ -2,7 +2,6 @@ import { callToAction } from './objects/callToAction';
 import { customImage } from './objects/customImage';
 import { bodyPortableText } from './objects/portable-text/bodyPortableText';
 import { actionButton } from './objects/actionButton/actionButton';
-import { registerButton } from './objects/timepad/registerButton';
 import { partner } from './references/partner';
 import expert from './references/expert';
 import article from './references/article';
@@ -48,6 +47,5 @@ export default createSchema({
     smallBlockText,
     youtube,
     actionBlock,
-    registerButton,
   ]),
 });

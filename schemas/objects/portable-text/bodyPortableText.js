@@ -48,10 +48,5 @@ export const bodyPortableText = {
       icon: FaVideo,
       title: 'Видео',
     },
-    {
-      type: 'registerButton',
-      icon: IoIosRadioButtonOff,
-      title: 'Кнопка регистрации на вебинар',
-    },
   ],
 };
