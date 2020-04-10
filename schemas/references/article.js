@@ -15,7 +15,7 @@ const article = {
     },
     {
       name: 'date',
-      title: 'Дата и публикации',
+      title: 'Дата публикации',
       type: 'date',
       options: { dateFormat: 'DD.MM.YYYY' },
     },
@@ -100,6 +100,7 @@ const article = {
     sortIndex: 500,
     status: true,
     categories: [ArticleCategory.Article],
+    pin: false,
   },
   preview: {
     select: {
