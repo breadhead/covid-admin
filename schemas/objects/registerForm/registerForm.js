@@ -7,17 +7,6 @@ export const registerForm = {
   type: 'document',
   fields: [
     {
-      name: 'webinarName',
-      title: 'Название мероприятия',
-      type: 'string',
-      validation: Rule => Rule.required(),
-    },
-    {
-      name: 'startDate',
-      title: 'Дата начала',
-      type: 'datetime',
-    },
-    {
       name: 'webinarLink',
       title: 'Ссылка на вебинар',
       type: 'string',
@@ -26,7 +15,7 @@ export const registerForm = {
 
   preview: {
     select: {
-      title: 'webinarName',
+      title: 'webinarLink',
     },
     prepare(selection) {
       const { title } = selection;
