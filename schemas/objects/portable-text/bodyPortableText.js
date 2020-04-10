@@ -1,6 +1,6 @@
-import { IoIosRadioButtonOff } from 'react-icons/all';
-import { FaFireAlt, FaVideo } from 'react-icons/fa';
+import { IoMdPaper } from 'react-icons/io';
 import { annotations } from './annotations';
+import { FaVideo, FaFireAlt } from 'react-icons/fa';
 
 export const portableTextElements = [
   { title: 'Текст', value: 'normal' },
@@ -47,6 +47,11 @@ export const bodyPortableText = {
       type: 'youtube',
       icon: FaVideo,
       title: 'Видео',
+    },
+    {
+      type: 'registerForm',
+      icon: IoMdPaper,
+      title: 'Форма регистрации на вебинар',
     },
   ],
 };
