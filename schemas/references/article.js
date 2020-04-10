@@ -14,9 +14,21 @@ const article = {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'date',
+      title: 'Дата и публикации',
+      type: 'date',
+      options: { dateFormat: 'DD.MM.YYYY' },
+    },
+    {
       name: 'pin',
-      title: 'Запинить',
+      title: 'Выделить как самое важное',
       type: 'boolean',
+    },
+    {
+      name: 'webinarDate',
+      title: 'Дата и время вебинара',
+      type: 'date',
+      options: { dateFormat: 'DD.MM.YYYY' },
     },
     {
       name: 'categories',
