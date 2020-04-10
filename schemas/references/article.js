@@ -27,8 +27,13 @@ const article = {
     {
       name: 'webinarDate',
       title: 'Дата и время вебинара',
-      type: 'date',
-      options: { dateFormat: 'DD.MM.YYYY' },
+      type: 'datetime',
+      options: {
+        dateFormat: 'YYYY-MM-DD',
+        timeFormat: 'HH:mm',
+        timeStep: 15,
+        calendarTodayLabel: 'Today',
+      },
     },
     {
       name: 'categories',
