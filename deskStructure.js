@@ -4,7 +4,7 @@ import { FiFileText } from 'react-icons/fi';
 import { AiFillTags } from 'react-icons/ai';
 import { getListItem } from './helpers/getListItem';
 import { MdInsertLink, FaHospital } from 'react-icons/all';
-import { FaHandHoldingHeart } from 'react-icons/fa'
+import { FaHandHoldingHeart } from 'react-icons/fa';
 
 export default () =>
   S.list()

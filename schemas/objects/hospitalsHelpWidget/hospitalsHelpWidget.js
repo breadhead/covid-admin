@@ -1,4 +1,4 @@
-import { FaHandHoldingHeart } from 'react-icons/fa'
+import { FaHandHoldingHeart } from 'react-icons/fa';
 
 export const hospitalsHelpWidget = {
   name: 'hospitalsHelpWidget',
@@ -10,13 +10,19 @@ export const hospitalsHelpWidget = {
       name: 'helpedCount',
       title: 'Количество больниц, которым мы помогли',
       type: 'number',
-      validation: Rule => Rule.required().integer().positive(),
+      validation: Rule =>
+        Rule.required()
+          .integer()
+          .positive(),
     },
     {
       name: 'helpWanted',
       title: 'Количество ожидающих помощи',
       type: 'number',
-      validation: Rule => Rule.required().integer().positive(),
+      validation: Rule =>
+        Rule.required()
+          .integer()
+          .positive(),
     },
     {
       name: 'moneyGathered',

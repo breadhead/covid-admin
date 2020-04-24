@@ -15,7 +15,7 @@ import { actionBlock } from './objects/actionBlock/actionBlock';
 import { tag } from './references/tag';
 import { form } from './objects/form/form';
 import { registerForm } from './objects/registerForm/registerForm';
-import { hospitalsHelpWidget } from './objects/hospitalsHelpWidget/hospitalsHelpWidget'
+import { hospitalsHelpWidget } from './objects/hospitalsHelpWidget/hospitalsHelpWidget';
 
 import createSchema from 'part:@sanity/base/schema-creator';
 

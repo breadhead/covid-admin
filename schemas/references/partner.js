@@ -37,6 +37,12 @@ export const partner = {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'isATrust',
+      title: 'Фонд',
+      type: 'boolean',
+    },
+
+    {
       name: 'name',
       title: 'Название',
       validation: Rule => Rule.required(),
