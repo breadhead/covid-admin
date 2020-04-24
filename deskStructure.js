@@ -4,6 +4,7 @@ import { FiFileText } from 'react-icons/fi';
 import { AiFillTags } from 'react-icons/ai';
 import { getListItem } from './helpers/getListItem';
 import { MdInsertLink, FaHospital } from 'react-icons/all';
+import { FaHandHoldingHeart } from 'react-icons/fa'
 
 export default () =>
   S.list()
@@ -34,4 +35,15 @@ export default () =>
         name: 'Оф. ресурсы для врачей',
         icon: MdInsertLink,
       }),
+      S.listItem()
+        .id('hospitalsHelpWidgetSettings')
+        .title('Виджет помощи больницам')
+        .icon(FaHandHoldingHeart)
+        .child(
+          S.editor()
+            .title('Виджет помощи больницам')
+            .id('hospitalsHelpWidget')
+            .schemaType('hospitalsHelpWidget')
+            .documentId('hospitalsHelpWidget'),
+        ),
     ]);
